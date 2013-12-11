@@ -1,0 +1,241 @@
+<!doctype html>
+
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title></title>
+  
+    <link rel="stylesheet/less" type="text/css" href="metro-vibes-less/style.less">
+
+    <script src="metro-vibes-css/js/libs/jquery-ui.min.js"></script>
+    <script src="metro-vibes-css/js/jquery-ui.multidatespicker.js"></script>
+    <link href="metro-vibes-css/css/jquery-ui-1.8.20.custom.css" rel="stylesheet">
+
+    <script src="metro-vibes-css/js/libs/modernizr.min.js"></script>
+    <script src="metro-vibes-css/js/libs/jquery-1.10.0.js"></script>
+    <script src="metro-vibes-css/js/libs/jquery-ui.min.js"></script>
+    <script src="metro-vibes-css/js/libs/bootstrap.min.js"></script>
+    
+    <script src="metro-vibes-css/js/jplayer.playlist.min.js"></script>
+    <script src="metro-vibes-css/js/general.js"></script>
+    <script src="metro-vibes-css/js/jquery.jscrollpane.min.js"></script>
+    <script src="metro-vibes-css/js/jquery.jplayer.min.js"></script>
+    <script src="metro-vibes-css/js/jquery.customInput.js"></script>
+    <script src="metro-vibes-css/js/jquery.jscrollpane.min.js"></script>
+    <script src="metro-vibes-css/js/jquery.slider.bundle.js"></script>
+    <script src="metro-vibes-css/js/jquery.mousewheel.js"></script>
+    <script src="metro-vibes-css/js/jquery.slider.js"></script>
+    <script src="metro-vibes-css/js/video.js"></script>
+    <script src="metro-vibes-css/js/jquery.powerful-placeholder.min.js"></script>
+    <script src="metro-vibes-css/js/respond.min.js"></script>
+    <script src="metro-vibes-css/js/progressbar.js"></script>
+    <script src="metro-vibes-css/js/jquery-ui.multidatespicker.js"></script>
+
+
+    <script>
+    // <![CDATA[
+    jQuery(document).ready(function($) {
+
+        // First Calendar
+        function assignCalendar(id){
+            $('<div class="calendar" />')
+                    .insertAfter( $(id) )
+                    .multiDatesPicker({
+                        dateFormat: 'yy-mm-dd',
+                        minDate: new Date(),
+                        maxDate: '+1y',
+                        altField: id,
+                        firstDay: 1,
+                        showOtherMonths: true
+                    }).prev().hide();
+        }
+        assignCalendar('#date_departure');
+
+        // Second Calendar
+        function assignCalendar(id){
+            $('<div class="calendar" />')
+                    .insertAfter( $(id) )
+                    .multiDatesPicker({
+                        dateFormat: 'yy-mm-dd',
+                        minDate: new Date(),
+                        maxDate: '+1y',
+                        altField: id,
+                        firstDay: 1,
+                        showOtherMonths: true
+                    }).prev().hide();
+        }
+        assignCalendar('#date_departure2');
+
+    });
+    // ]]>
+</script>
+               
+
+
+
+
+ 
+    <link href="metro-vibes-css/css/bootstrap.css" media="screen" rel="stylesheet">
+    <link href="metro-vibes-css/style.css" media="screen" rel="stylesheet">
+
+    
+    <script src="metro-vibes-css/js/general.js"></script>
+
+   
+</head>
+
+<div id="topmenu">
+    <ul class="dropdown clearfix boxed">
+        <li>
+            <a href="#">
+                <i class="icon-menu"></i>
+                <span>check in</span>
+                <sup class="note">3</sup>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="icon-menu icon-menu2"></i>
+                <span>events</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="icon-menu icon-menu3"></i>
+                <span>account</span>
+            </a>
+            <ul>
+                <li><a href="#">Web design</a></li>
+                <li><a href="#">User interface</a></li>
+                <li><a href="#">Social media</a>
+                    <ul>
+                        <li><a href="#">Gallery images</a></li>
+                        <li><a href="#">Fine Slider</a></li>
+                        <li><a href="#">Video in header</a></li>
+                        <li><a href="#">Video Slider</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">
+                <i class="icon-menu icon-menu4"></i>
+                <span>settings</span>
+            </a>
+        </li>
+    </ul>
+</div>
+ <!-- Carousel indicators -->
+<div class="tabs_framed" >
+    <div class="inner">
+        <ul class="tabs clearfix">
+            <li><a href="#recent" data-toggle="tab">Upcomming</a></li>
+            <li class="active"><a href="#popular" data-toggle="tab">Previous</a></li>
+        </ul>
+
+        <div class="tab-content boxed clearfix" style="width:300px" >
+            <div class="tab-pane fade" id="popular" style="width:200px">
+                <!--place your content here-->
+
+            </div>
+            <div class="tab-pane fade in active" id="recent" style="width:200px;" >
+                <!--place your content here-->
+               
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="widget-container widget_calendar boxed styled" style="width:600px">
+    <div class="inner">
+        <input type="text" name="date_departure" class="inputField" value="" id="date_departure">
+    </div>
+</div>
+
+<div class="widget-container widget_calendar boxed" style="width:200px;height:330px;">
+    <div class="inner">
+        <input type="text" name="date_departure2" class="inputField" value="" id="date_departure2">
+    </div>
+</div>
+
+
+
+
+<div class="widget-container widget_gallery boxed">
+    <div class="inner">
+        <div id="myCarousel2" class="carousel slide" data-interval="20000">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+                <div class="item">
+                    <img src="metro-vibes-less/images/temp/avatar.png" alt="" />
+                    <div class="carousel-desc"><span>Wild Deer</span></div>
+                </div>
+                ...
+                ...
+                ...
+            </div>
+            <!-- Carousel indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel2" data-slide-to="0"></li>
+                ...
+                ...
+                ...
+            </ol>
+            <!-- Carousel nav -->
+            <a class="carousel-control left" href="#myCarousel2" data-slide="prev"></a>
+            <a class="carousel-control right" href="#myCarousel2" data-slide="next"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="widget-container widget_avatar boxed " style="width:400px;height:300px;">
+    <div class="avatar-image">
+        <img src="metro-vibes-less/images/temp/avatar-image.jpg" alt="" />
+    </div>
+    <div class="inner clearfix">
+        <div class="avatar">
+            <img src="metro-vibes-less/images/temp/avatar.png" alt="" />
+        </div>
+        <h5>John Raymons</h5>
+        <span class="subtitle">
+            Your talent amazes! This is awesome. Excited to see the final product.
+        </span>
+    </div>
+    <div class="post-meta-links">
+        <ul class="clearfix">
+            <li class="post-view">
+                <a href="#"><span><i class="icon-post"></i>172</span></a>
+            </li>
+            <li class="post-comm">
+                <a href="#"><span><i class="icon-post"></i>34</span></a>
+            </li>
+            <li class="post-like">
+                <a href="#"><span><i class="icon-post"></i>210</span></a>
+            </li>
+        </ul>
+    </div>
+</div>
+             
+
+
+<div class="widget-container widget-social boxed">
+    <ul>
+        <li>
+            <a href="#" class="social-facebook"><span>Facebook</span></a>
+        </li>
+        <li>
+            <a href="#" class="social-pinterest"><span>Pinterest</span></a>
+        </li>
+        <li>
+            <a href="#" class="social-twitter"><span>Twitter</span></a>
+        </li>
+    </ul>
+</div>
+        
+
+<a href="#" class="btn btn-large btn btn-brown"><span>Large Button</span></a>
